@@ -18,7 +18,7 @@
             background-size: cover;
             color: #ecf0f1;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
             position: relative;
             border-bottom: 5px solid #e74c3c;
@@ -30,7 +30,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Camada mais leve para destacar a ilustração */
+            background: rgba(0, 0, 0, 0.3); /* Camada leve para destacar */
             z-index: 1;
         }
         header h1, header p {
@@ -40,12 +40,12 @@
         }
         header h1 {
             margin: 0;
-            font-size: 3.5em;
-            letter-spacing: 3px;
+            font-size: 4em;
+            letter-spacing: 4px;
             font-weight: bold;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.4em;
             margin-top: 10px;
         }
         .container {
@@ -200,14 +200,14 @@
 <body>
     <header>
         <h1>OJOGOONLINE</h1>
-        <p>Seu guia interativo para o Jogo do Bicho - Explore, aprenda e divirta-se!</p>
+        <p>Seu guia definitivo para o Jogo do Bicho - Números, Puxadas, Sonhos e Estratégias!</p>
     </header>
     <div class="container">
-        <!-- Grupos e Números (Tabela) -->
+        <!-- Grupos e Números (Dado) -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Grupos e Números ▼</div>
             <div class="card-content">
-                <p>Aqui estão os 25 grupos de animais do Jogo do Bicho com suas respectivas dezenas, centenas e milhares, organizados para fácil consulta.</p>
+                <p>Conheça os 25 grupos de animais do Jogo do Bicho, suas dezenas, centenas e milhares para suas apostas.</p>
                 <table>
                     <tr><th>Grupo</th><th>Animal</th><th>Dezenas</th><th>Centenas (exemplo)</th><th>Milhares (exemplo)</th></tr>
                     <tr><td>01</td><td>Avestruz</td><td>01-02-03-04</td><td>101, 202, 303, 404</td><td>1001, 2002, 3303, 4404</td></tr>
@@ -237,14 +237,14 @@
                     <tr><td>25</td><td>Vaca</td><td>97-98-99-00</td><td>197, 298, 399, 400</td><td>1097, 2098, 3399, 4400</td></tr>
                 </table>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/1597/1597107.png" alt="Tabela" class="animal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/10234/10234616.png" alt="Dado" class="animal-icon">
         </div>
 
-        <!-- Puxadas (Corrente) -->
+        <!-- Puxadas (Coelho) -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Puxadas ▼</div>
             <div class="card-content">
-                <p>Escolha um animal e descubra quais ele "puxa" segundo a tradição do Jogo do Bicho, uma técnica clássica para suas apostas.</p>
+                <p>Escolha um animal e veja quais ele "puxa" no Jogo do Bicho, uma tradição para combinar suas apostas.</p>
                 <select id="animal-select">
                     <option value="">Selecione um animal</option>
                     <option value="avestruz">Avestruz</option>
@@ -276,14 +276,14 @@
                 <button onclick="showPuxadas()">Ver Puxadas</button>
                 <div id="puxada-result"></div>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2950/2950709.png" alt="Corrente" class="animal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069171.png" alt="Coelho" class="animal-icon">
         </div>
 
-        <!-- Sonhos (Nuvem com Lua) -->
+        <!-- Sonhos (Vaca) -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Sonhos ▼</div>
             <div class="card-content">
-                <p>Interprete seus sonhos e veja quais grupos do Jogo do Bicho eles podem indicar, com exemplos de milhares para inspirar suas jogadas.</p>
+                <p>Descubra o significado dos seus sonhos no Jogo do Bicho e inspire suas apostas com os grupos e milhares sugeridos.</p>
                 <table>
                     <tr><th>Sonho</th><th>Animal (Grupo)</th><th>Milhar Exemplo</th></tr>
                     <tr><td>Banana</td><td>Macaco (17)</td><td>1065, 4468</td></tr>
@@ -301,28 +301,43 @@
                     <tr><td>Floresta</td><td>Urso (23)</td><td>1089, 4492</td></tr>
                     <tr><td>Praia</td><td>Peru (20)</td><td>1077, 4480</td></tr>
                     <tr><td>Buraco</td><td>Coelho (10)</td><td>1037, 4440</td></tr>
+                    <tr><td>Correr rápido</td><td>Avestruz (01)</td><td>1001, 4404</td></tr>
+                    <tr><td>Mariposa</td><td>Borboleta (04)</td><td>1013, 4416</td></tr>
+                    <tr><td>Latido</td><td>Cachorro (05)</td><td>1017, 4420</td></tr>
+                    <tr><td>Montanha</td><td>Cabra (06)</td><td>1021, 4424</td></tr>
+                    <tr><td>Lã</td><td>Carneiro (07)</td><td>1025, 4428</td></tr>
+                    <tr><td>Gato miando</td><td>Gato (14)</td><td>1053, 4456</td></tr>
+                    <tr><td>Canto ao amanhecer</td><td>Galo (13)</td><td>1049, 4452</td></tr>
+                    <tr><td>Pesado</td><td>Elefante (12)</td><td>1045, 4448</td></tr>
+                    <tr><td>Velocidade</td><td>Veado (24)</td><td>1093, 4496</td></tr>
+                    <tr><td>Riqueza</td><td>Pavão (19)</td><td>1073, 4476</td></tr>
+                    <tr><td>Fezes</td><td>Burro (03)</td><td>1009, 4412</td></tr>
+                    <tr><td>Sol forte</td><td>Camelo (08)</td><td>1029, 4432</td></tr>
+                    <tr><td>Luta</td><td>Tigre (22)</td><td>1085, 4488</td></tr>
+                    <tr><td>Carga pesada</td><td>Cavalo (11)</td><td>1041, 4444</td></tr>
+                    <tr><td>Rio</td><td>Jacaré (15)</td><td>1057, 4460</td></tr>
                 </table>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/4148/4148460.png" alt="Nuvem com Lua" class="animal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616488.png" alt="Vaca" class="animal-icon">
         </div>
 
-        <!-- Cruz do Dia (Calendário) -->
+        <!-- Cruz do Dia (Galo) -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Cruz do Dia ▼</div>
             <div class="card-content">
-                <p>A Cruz do Dia é calculada com base no dia atual (06/03/2025). Clique para ver o resultado e uma milhar sugerida para o dia.</p>
+                <p>Calcule a Cruz do Dia para 06/03/2025 e receba uma milhar baseada no grupo do dia.</p>
                 <button onclick="calcularCruz()">Ver Cruz do Dia</button>
                 <div id="cruz-result"></div>
-                <p><strong>Como funciona:</strong> Dia + Dia → Multiplica algarismos → Soma 3. A milhar é gerada aleatoriamente no grupo correspondente.</p>
+                <p><strong>Como funciona:</strong> Dia + Dia → Multiplica algarismos → Soma 3. Milhar gerada no grupo.</p>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" alt="Calendário" class="animal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069160.png" alt="Galo" class="animal-icon">
         </div>
 
-        <!-- Estatísticas (Gráfico de Barras) -->
+        <!-- Estatísticas (Tigre) -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Estatísticas de Animais ▼</div>
             <div class="card-content">
-                <p>Aqui estão os animais mais frequentes, baseados em tendências gerais, para guiar suas escolhas com dados reais.</p>
+                <p>Veja os animais mais sorteados no Jogo do Bicho com base em tendências gerais.</p>
                 <table>
                     <tr><th>Animal</th><th>Grupo</th><th>Frequência (%)</th></tr>
                     <tr><td>Macaco</td><td>17</td><td>8.5%</td></tr>
@@ -332,10 +347,10 @@
                     <tr><td>Águia</td><td>02</td><td>6.5%</td></tr>
                 </table>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/3163/3163478.png" alt="Gráfico de Barras" class="animal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616496.png" alt="Tigre" class="animal-icon">
         </div>
 
-        <!-- Estratégias (Lâmpada Acesa) -->
+        <!-- Estratégias (Leão) -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Estratégias ▼</div>
             <div class="card-content">
@@ -349,7 +364,7 @@
                 <ul>
                     <li><strong>Soma de Sonhos:</strong> Some as dezenas de dois animais sonhados (ex.: Macaco 65 + Vaca 97 = 162 → 62, Leão).</li>
                     <li><strong>Soma do Dia e Mês:</strong> Dia 06 + Mês 03 = 09 (Cobra), milhar 1033.</li>
-                    <li><strong>Soma com a Idade:</strong> Insira sua idade abaixo para gerar uma milhar personalizada:
+                    <li><strong>Soma com a Idade:</strong> Insira sua idade para uma milhar única:
                         <input type="number" id="idade" min="1" max="99" placeholder="Sua idade">
                         <button onclick="gerarMilharIdade()">Gerar Milhar</button>
                         <div id="milhar-idade-result"></div>
@@ -357,10 +372,22 @@
                     <li><strong>Soma Aleatória:</strong> Escolha dois números pessoais (ex.: dia de nascimento 15 + número da casa 23 = 38, Coelho).</li>
                 </ul>
                 
+                <h3>Combinação de Puxadas</h3>
+                <p>Escolha um animal frequente (ex.: Macaco) e jogue suas puxadas (Avestruz, Cachorro) em grupos ou dezenas.</p>
+                
+                <h3>Milhar Invertida</h3>
+                <p>Inverta os dois últimos números do resultado anterior (ex.: 5678 → 87, Tigre) e adicione uma centena do grupo (ex.: 487).</p>
+                
+                <h3>Técnica do Relógio</h3>
+                <p>Use a hora atual (ex.: 14h = Gato, grupo 14) e combine com a dezena da Cruz do Dia para formar uma milhar (ex.: 1453).</p>
+                
+                <h3>Padrão de Repetição</h3>
+                <p>Observe resultados anteriores e repita dezenas que aparecem com frequência (ex.: 17 do Cachorro em três dias seguidos → 1717).</p>
+                
                 <h3>Dica Geral</h3>
-                <p>Use várias técnicas, observe padrões e ajuste conforme os resultados. Jogue com responsabilidade e boa sorte!</p>
+                <p>Combine técnicas, anote padrões e ajuste suas jogadas. Jogue com moderação e boa sorte!</p>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/149/149133.png" alt="Lâmpada Acesa" class="animal-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" alt="Leão" class="animal-icon">
         </div>
     </div>
 
@@ -373,7 +400,7 @@
     </div>
 
     <footer>
-        <p>© 2025 OJOGOONLINE - Feito com paixão para os entusiastas do Jogo do Bicho</p>
+        <p>© 2025 OJOGOONLINE - O portal completo para os amantes do Jogo do Bicho</p>
     </footer>
 
     <script>
