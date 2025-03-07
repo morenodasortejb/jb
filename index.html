@@ -14,14 +14,14 @@
             line-height: 1.6;
         }
         header {
-            background: #34495e url('https://cdn.pixabay.com/photo/2020/06/15/15/16/casino-5301746_1280.png') no-repeat center center;
+            background: #34495e url('https://cdn.pixabay.com/photo/2023/03/28/19/55/ai-generated-7883606_1280.jpg') no-repeat center center;
             background-size: cover;
             color: #ecf0f1;
             text-align: center;
             padding: 60px 20px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
             position: relative;
-            border-bottom: 5px solid #e74c3c;
+            border-bottom: 5px solid #FFD700; /* Borda dourada no cabeçalho */
         }
         header::before {
             content: '';
@@ -30,7 +30,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3); /* Camada leve para destacar */
+            background: rgba(0, 0, 0, 0.3);
             z-index: 1;
         }
         header h1, header p {
@@ -57,14 +57,12 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
         .card {
-            background: #ecf0f1;
+            background: #d3d3d3; /* Cinza claro */
             border-radius: 15px;
             margin-bottom: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            padding-right: 100px;
             border: 2px solid #34495e;
         }
         .card:hover {
@@ -72,8 +70,8 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
         .card-header {
-            background: linear-gradient(90deg, #e74c3c, #c0392b);
-            color: white;
+            background: linear-gradient(90deg, #FFD700, #DAA520); /* Gradiente dourado */
+            color: #2c3e50; /* Texto em cinza escuro para contraste */
             padding: 20px;
             cursor: pointer;
             font-size: 1.8em;
@@ -84,27 +82,17 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         .card-header:hover {
-            background: linear-gradient(90deg, #c0392b, #e74c3c);
+            background: linear-gradient(90deg, #DAA520, #FFD700); /* Gradiente invertido ao hover */
         }
         .card-content {
             padding: 25px;
             display: none;
             color: #2c3e50;
-            background: #f7f9fb;
+            background: #e8e8e8;
             border-top: 1px solid #bdc3c7;
         }
         .card-content.active {
             display: block;
-        }
-        .animal-icon {
-            position: absolute;
-            top: 50%;
-            right: 15px;
-            transform: translateY(-50%);
-            width: 80px;
-            height: 80px;
-            z-index: 1;
-            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
         }
         table {
             width: 100%;
@@ -137,17 +125,17 @@
             transition: border-color 0.3s, box-shadow 0.3s;
         }
         select:hover, button:hover, input:hover {
-            border-color: #e74c3c;
-            box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+            border-color: #FFD700; /* Borda dourada ao hover */
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
         }
         button {
-            background: linear-gradient(90deg, #e74c3c, #c0392b);
-            color: white;
+            background: linear-gradient(90deg, #FFD700, #DAA520); /* Botões dourados */
+            color: #2c3e50;
             cursor: pointer;
             border: none;
         }
         button:hover {
-            background: linear-gradient(90deg, #c0392b, #e74c3c);
+            background: linear-gradient(90deg, #DAA520, #FFD700);
         }
         #puxada-result, #cruz-result, #milhar-idade-result {
             margin-top: 20px;
@@ -162,7 +150,7 @@
             padding: 25px;
             background: linear-gradient(90deg, #34495e, #2c3e50);
             color: #ecf0f1;
-            border-top: 5px solid #e74c3c;
+            border-top: 5px solid #FFD700; /* Borda dourada no rodapé */
             box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
         }
         .whatsapp-float {
@@ -203,7 +191,7 @@
         <p>Seu guia definitivo para o Jogo do Bicho - Números, Puxadas, Sonhos e Estratégias!</p>
     </header>
     <div class="container">
-        <!-- Grupos e Números (Dado) -->
+        <!-- Grupos e Números -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Grupos e Números ▼</div>
             <div class="card-content">
@@ -237,10 +225,9 @@
                     <tr><td>25</td><td>Vaca</td><td>97-98-99-00</td><td>197, 298, 399, 400</td><td>1097, 2098, 3399, 4400</td></tr>
                 </table>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/10234/10234616.png" alt="Dado" class="animal-icon">
         </div>
 
-        <!-- Puxadas (Coelho) -->
+        <!-- Puxadas -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Puxadas ▼</div>
             <div class="card-content">
@@ -276,10 +263,9 @@
                 <button onclick="showPuxadas()">Ver Puxadas</button>
                 <div id="puxada-result"></div>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069171.png" alt="Coelho" class="animal-icon">
         </div>
 
-        <!-- Sonhos (Vaca) -->
+        <!-- Sonhos -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Sonhos ▼</div>
             <div class="card-content">
@@ -318,10 +304,9 @@
                     <tr><td>Rio</td><td>Jacaré (15)</td><td>1057, 4460</td></tr>
                 </table>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/616/616488.png" alt="Vaca" class="animal-icon">
         </div>
 
-        <!-- Cruz do Dia (Galo) -->
+        <!-- Cruz do Dia -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Cruz do Dia ▼</div>
             <div class="card-content">
@@ -330,10 +315,9 @@
                 <div id="cruz-result"></div>
                 <p><strong>Como funciona:</strong> Dia + Dia → Multiplica algarismos → Soma 3. Milhar gerada no grupo.</p>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/3069/3069160.png" alt="Galo" class="animal-icon">
         </div>
 
-        <!-- Estatísticas (Tigre) -->
+        <!-- Estatísticas -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Estatísticas de Animais ▼</div>
             <div class="card-content">
@@ -347,10 +331,9 @@
                     <tr><td>Águia</td><td>02</td><td>6.5%</td></tr>
                 </table>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/616/616496.png" alt="Tigre" class="animal-icon">
         </div>
 
-        <!-- Estratégias (Leão) -->
+        <!-- Estratégias -->
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Estratégias ▼</div>
             <div class="card-content">
@@ -387,7 +370,6 @@
                 <h3>Dica Geral</h3>
                 <p>Combine técnicas, anote padrões e ajuste suas jogadas. Jogue com moderação e boa sorte!</p>
             </div>
-            <img src="https://cdn-icons-png.flaticon.com/512/616/616489.png" alt="Leão" class="animal-icon">
         </div>
     </div>
 
