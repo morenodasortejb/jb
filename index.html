@@ -14,11 +14,11 @@
             line-height: 1.6;
         }
         header {
-            background: #34495e url('https://cdn.pixabay.com/photo/2023/03/28/19/55/ai-generated-7883606_1280.jpg') no-repeat center center;
+            background: #34495e url('banner.png') no-repeat center center;
             background-size: cover;
             color: #ecf0f1;
             text-align: center;
-            padding: 60px 20px;
+            padding: 40px 15px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
             position: relative;
             border-bottom: 5px solid #FFD700;
@@ -30,7 +30,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.4);
             z-index: 1;
         }
         header h1, header p {
@@ -40,58 +40,53 @@
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            letter-spacing: 2px;
-            font-family: 'Arial', sans-serif;
+            font-size: 2em;
+            letter-spacing: 1px;
             font-weight: bold;
             text-transform: uppercase;
         }
         header p {
-            font-size: 1.4em;
-            margin-top: 20px;
+            font-size: 1.2em;
+            margin-top: 10px;
         }
         .container {
             max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
+            margin: 20px auto;
+            padding: 15px;
             background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
+            border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
         .card {
             background: #d3d3d3;
-            border-radius: 15px;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: 2px solid #34495e;
         }
         .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
         .card-header {
             background: linear-gradient(90deg, #FFD700, #DAA520);
             color: #2c3e50;
-            padding: 20px;
+            padding: 15px;
             cursor: pointer;
-            font-size: 1.8em;
+            font-size: 1.5em;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background 0.3s ease;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
-        .card-header:hover {
-            background: linear-gradient(90deg, #DAA520, #FFD700);
-        }
         .card-content {
-            padding: 25px;
-            display: none;
+            padding: 15px;
             color: #2c3e50;
             background: #e8e8e8;
             border-top: 1px solid #bdc3c7;
+            display: none;
         }
         .card-content.active {
             display: block;
@@ -99,14 +94,15 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 10px;
             background: #ffffff;
-            border-radius: 8px;
+            border-radius: 5px;
             overflow: hidden;
+            font-size: 0.9em;
         }
         th, td {
             border: 1px solid #bdc3c7;
-            padding: 15px;
+            padding: 8px;
             text-align: center;
         }
         th {
@@ -118,13 +114,14 @@
             background: #f7f9fb;
         }
         select, button, input {
-            padding: 12px;
-            font-size: 1.1em;
-            margin: 10px 5px;
-            border-radius: 8px;
+            padding: 10px;
+            font-size: 1em;
+            margin: 5px;
+            border-radius: 5px;
             border: 2px solid #34495e;
             background: #ffffff;
-            transition: border-color 0.3s, box-shadow 0.3s;
+            width: calc(100% - 14px);
+            box-sizing: border-box;
         }
         select:hover, button:hover, input:hover {
             border-color: #FFD700;
@@ -140,55 +137,44 @@
             background: linear-gradient(90deg, #DAA520, #FFD700);
         }
         #puxada-result, #cruz-result, #milhar-idade-result, #palpites-result {
-            margin-top: 20px;
+            margin-top: 10px;
             font-weight: bold;
-            color: #2c3e50;
+            color: #34495e;
             background: #e8ecef;
-            padding: 10px;
+            padding: 8px;
             border-radius: 5px;
+            font-size: 0.9em;
         }
         footer {
             text-align: center;
-            padding: 25px;
+            padding: 20px;
             background: linear-gradient(90deg, #34495e, #2c3e50);
             color: #ecf0f1;
             border-top: 5px solid #FFD700;
             box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
-            position: relative;
-        }
-        .banner-container {
-            background: rgba(44, 62, 80, 0.8);
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .banner-container a img {
-            max-width: 100%;
-            border-radius: 8px;
         }
         .back-button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 20px;
+            margin-top: 15px;
+            padding: 10px 15px;
             background: linear-gradient(90deg, #FFD700, #DAA520);
             color: #2c3e50;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s ease;
         }
         .back-button:hover {
             background: linear-gradient(90deg, #DAA520, #FFD700);
         }
         .whatsapp-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 1000;
             transition: transform 0.3s ease;
         }
         .whatsapp-float:hover {
-            transform: scale(1.2) rotate(15deg);
+            transform: scale(1.1) rotate(10deg);
         }
         .whatsapp-float a {
             display: flex;
@@ -196,19 +182,74 @@
             text-decoration: none;
         }
         .whatsapp-float img {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
         }
         .whatsapp-float span {
             background: linear-gradient(90deg, #25D366, #1ebe54);
             color: white;
-            padding: 8px 15px;
-            border-radius: 8px;
-            margin-right: 5px; /* Reduzido de 15px para 5px */
+            padding: 6px 12px;
+            border-radius: 5px;
+            margin-right: 5px;
             font-weight: bold;
-            font-size: 1.2em;
+            font-size: 1em;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Media Queries para dispositivos móveis */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 10px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .card-header {
+                font-size: 1.2em;
+                padding: 10px;
+            }
+            .card-content {
+                padding: 10px;
+                font-size: 0.85em;
+            }
+            table {
+                font-size: 0.75em; /* Reduzido ainda mais */
+            }
+            th, td {
+                padding: 5px; /* Padding menor */
+            }
+            select, button, input {
+                font-size: 0.9em;
+                padding: 8px;
+            }
+            #puxada-result, #cruz-result, #milhar-idade-result, #palpites-result {
+                font-size: 0.85em;
+                padding: 6px;
+            }
+            footer {
+                padding: 15px;
+                font-size: 0.9em;
+            }
+            .back-button {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+            .whatsapp-float img {
+                width: 40px;
+                height: 40px;
+            }
+            .whatsapp-float span {
+                font-size: 0.9em;
+                padding: 5px 10px;
+            }
         }
     </style>
 </head>
@@ -222,34 +263,34 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Grupos e Números ▼</div>
             <div class="card-content">
-                <p>Conheça os 25 grupos de animais do Jogo do Bicho, suas dezenas, centenas e milhares para suas apostas.</p>
+                <p>Conheça os 25 grupos de animais e suas dezenas.</p>
                 <table>
-                    <tr><th>Grupo</th><th>Animal</th><th>Dezenas</th><th>Centenas (exemplo)</th><th>Milhares (exemplo)</th></tr>
-                    <tr><td>01</td><td>Avestruz</td><td>01-02-03-04</td><td>101, 202, 303, 404</td><td>1001, 2002, 3303, 4404</td></tr>
-                    <tr><td>02</td><td>Águia</td><td>05-06-07-08</td><td>105, 206, 307, 408</td><td>1005, 2006, 3307, 4408</td></tr>
-                    <tr><td>03</td><td>Burro</td><td>09-10-11-12</td><td>109, 210, 311, 412</td><td>1009, 2010, 3311, 4412</td></tr>
-                    <tr><td>04</td><td>Borboleta</td><td>13-14-15-16</td><td>113, 214, 315, 416</td><td>1013, 2014, 3315, 4416</td></tr>
-                    <tr><td>05</td><td>Cachorro</td><td>17-18-19-20</td><td>117, 218, 319, 420</td><td>1017, 2018, 3319, 4420</td></tr>
-                    <tr><td>06</td><td>Cabra</td><td>21-22-23-24</td><td>121, 222, 323, 424</td><td>1021, 2022, 3323, 4424</td></tr>
-                    <tr><td>07</td><td>Carneiro</td><td>25-26-27-28</td><td>125, 226, 327, 428</td><td>1025, 2026, 3327, 4428</td></tr>
-                    <tr><td>08</td><td>Camelo</td><td>29-30-31-32</td><td>129, 230, 331, 432</td><td>1029, 2030, 3331, 4432</td></tr>
-                    <tr><td>09</td><td>Cobra</td><td>33-34-35-36</td><td>133, 234, 335, 436</td><td>1033, 2034, 3335, 4436</td></tr>
-                    <tr><td>10</td><td>Coelho</td><td>37-38-39-40</td><td>137, 238, 339, 440</td><td>1037, 2038, 3339, 4440</td></tr>
-                    <tr><td>11</td><td>Cavalo</td><td>41-42-43-44</td><td>141, 242, 343, 444</td><td>1041, 2042, 3343, 4444</td></tr>
-                    <tr><td>12</td><td>Elefante</td><td>45-46-47-48</td><td>145, 246, 347, 448</td><td>1045, 2046, 3347, 4448</td></tr>
-                    <tr><td>13</td><td>Galo</td><td>49-50-51-52</td><td>149, 250, 351, 452</td><td>1049, 2050, 3351, 4452</td></tr>
-                    <tr><td>14</td><td>Gato</td><td>53-54-55-56</td><td>153, 254, 355, 456</td><td>1053, 2054, 3355, 4456</td></tr>
-                    <tr><td>15</td><td>Jacaré</td><td>57-58-59-60</td><td>157, 258, 359, 460</td><td>1057, 2058, 3359, 4460</td></tr>
-                    <tr><td>16</td><td>Leão</td><td>61-62-63-64</td><td>161, 262, 363, 464</td><td>1061, 2062, 3363, 4464</td></tr>
-                    <tr><td>17</td><td>Macaco</td><td>65-66-67-68</td><td>165, 266, 367, 468</td><td>1065, 2066, 3367, 4468</td></tr>
-                    <tr><td>18</td><td>Porco</td><td>69-70-71-72</td><td>169, 270, 371, 472</td><td>1069, 2070, 3371, 4472</td></tr>
-                    <tr><td>19</td><td>Pavão</td><td>73-74-75-76</td><td>173, 274, 375, 476</td><td>1073, 2074, 3375, 4476</td></tr>
-                    <tr><td>20</td><td>Peru</td><td>77-78-79-80</td><td>177, 278, 379, 480</td><td>1077, 2078, 3379, 4480</td></tr>
-                    <tr><td>21</td><td>Touro</td><td>81-82-83-84</td><td>181, 282, 383, 484</td><td>1081, 2082, 3383, 4484</td></tr>
-                    <tr><td>22</td><td>Tigre</td><td>85-86-87-88</td><td>185, 286, 387, 488</td><td>1085, 2086, 3387, 4488</td></tr>
-                    <tr><td>23</td><td>Urso</td><td>89-90-91-92</td><td>189, 290, 391, 492</td><td>1089, 2090, 3391, 4492</td></tr>
-                    <tr><td>24</td><td>Veado</td><td>93-94-95-96</td><td>193, 294, 395, 496</td><td>1093, 2094, 3395, 4496</td></tr>
-                    <tr><td>25</td><td>Vaca</td><td>97-98-99-00</td><td>197, 298, 399, 400</td><td>1097, 2098, 3399, 4400</td></tr>
+                    <tr><th>Grupo</th><th>Animal</th><th>Dezenas</th></tr>
+                    <tr><td>01</td><td>Avestruz</td><td>01-02-03-04</td></tr>
+                    <tr><td>02</td><td>Águia</td><td>05-06-07-08</td></tr>
+                    <tr><td>03</td><td>Burro</td><td>09-10-11-12</td></tr>
+                    <tr><td>04</td><td>Borboleta</td><td>13-14-15-16</td></tr>
+                    <tr><td>05</td><td>Cachorro</td><td>17-18-19-20</td></tr>
+                    <tr><td>06</td><td>Cabra</td><td>21-22-23-24</td></tr>
+                    <tr><td>07</td><td>Carneiro</td><td>25-26-27-28</td></tr>
+                    <tr><td>08</td><td>Camelo</td><td>29-30-31-32</td></tr>
+                    <tr><td>09</td><td>Cobra</td><td>33-34-35-36</td></tr>
+                    <tr><td>10</td><td>Coelho</td><td>37-38-39-40</td></tr>
+                    <tr><td>11</td><td>Cavalo</td><td>41-42-43-44</td></tr>
+                    <tr><td>12</td><td>Elefante</td><td>45-46-47-48</td></tr>
+                    <tr><td>13</td><td>Galo</td><td>49-50-51-52</td></tr>
+                    <tr><td>14</td><td>Gato</td><td>53-54-55-56</td></tr>
+                    <tr><td>15</td><td>Jacaré</td><td>57-58-59-60</td></tr>
+                    <tr><td>16</td><td>Leão</td><td>61-62-63-64</td></tr>
+                    <tr><td>17</td><td>Macaco</td><td>65-66-67-68</td></tr>
+                    <tr><td>18</td><td>Porco</td><td>69-70-71-72</td></tr>
+                    <tr><td>19</td><td>Pavão</td><td>73-74-75-76</td></tr>
+                    <tr><td>20</td><td>Peru</td><td>77-78-79-80</td></tr>
+                    <tr><td>21</td><td>Touro</td><td>81-82-83-84</td></tr>
+                    <tr><td>22</td><td>Tigre</td><td>85-86-87-88</td></tr>
+                    <tr><td>23</td><td>Urso</td><td>89-90-91-92</td></tr>
+                    <tr><td>24</td><td>Veado</td><td>93-94-95-96</td></tr>
+                    <tr><td>25</td><td>Vaca</td><td>97-98-99-00</td></tr>
                 </table>
             </div>
         </div>
@@ -258,7 +299,7 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Puxadas ▼</div>
             <div class="card-content">
-                <p>Escolha um animal e veja quais ele "puxa" no Jogo do Bicho, uma tradição para combinar suas apostas.</p>
+                <p>Escolha um animal e veja suas puxadas.</p>
                 <select id="animal-select">
                     <option value="">Selecione um animal</option>
                     <option value="avestruz">Avestruz</option>
@@ -296,39 +337,39 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Sonhos ▼</div>
             <div class="card-content">
-                <p>Descubra o significado dos seus sonhos no Jogo do Bicho e inspire suas apostas com os grupos e milhares sugeridos.</p>
+                <p>Significado dos sonhos e sugestões de apostas.</p>
                 <table>
-                    <tr><th>Sonho</th><th>Animal (Grupo)</th><th>Milhar Exemplo</th></tr>
-                    <tr><td>Banana</td><td>Macaco (17)</td><td>1065, 4468</td></tr>
-                    <tr><td>Cavalo correndo</td><td>Cavalo (11)</td><td>1041, 4444</td></tr>
-                    <tr><td>Água suja</td><td>Jacaré (15)</td><td>1057, 4460</td></tr>
-                    <tr><td>Leite</td><td>Vaca (25)</td><td>1097, 4400</td></tr>
-                    <tr><td>Serpente</td><td>Cobra (09)</td><td>1033, 4436</td></tr>
-                    <tr><td>Carne crua</td><td>Tigre (22)</td><td>1085, 4488</td></tr>
-                    <tr><td>Voo alto</td><td>Águia (02)</td><td>1005, 4408</td></tr>
-                    <tr><td>Dinheiro</td><td>Porco (18)</td><td>1069, 4472</td></tr>
-                    <tr><td>Fogo</td><td>Leão (16)</td><td>1061, 4464</td></tr>
-                    <tr><td>Chuva</td><td>Camelo (08)</td><td>1029, 4432</td></tr>
-                    <tr><td>Pássaro cantando</td><td>Pavão (19)</td><td>1073, 4476</td></tr>
-                    <tr><td>Carro</td><td>Touro (21)</td><td>1081, 4484</td></tr>
-                    <tr><td>Floresta</td><td>Urso (23)</td><td>1089, 4492</td></tr>
-                    <tr><td>Praia</td><td>Peru (20)</td><td>1077, 4480</td></tr>
-                    <tr><td>Buraco</td><td>Coelho (10)</td><td>1037, 4440</td></tr>
-                    <tr><td>Correr rápido</td><td>Avestruz (01)</td><td>1001, 4404</td></tr>
-                    <tr><td>Mariposa</td><td>Borboleta (04)</td><td>1013, 4416</td></tr>
-                    <tr><td>Latido</td><td>Cachorro (05)</td><td>1017, 4420</td></tr>
-                    <tr><td>Montanha</td><td>Cabra (06)</td><td>1021, 4424</td></tr>
-                    <tr><td>Lã</td><td>Carneiro (07)</td><td>1025, 4428</td></tr>
-                    <tr><td>Gato miando</td><td>Gato (14)</td><td>1053, 4456</td></tr>
-                    <tr><td>Canto ao amanhecer</td><td>Galo (13)</td><td>1049, 4452</td></tr>
-                    <tr><td>Pesado</td><td>Elefante (12)</td><td>1045, 4448</td></tr>
-                    <tr><td>Velocidade</td><td>Veado (24)</td><td>1093, 4496</td></tr>
-                    <tr><td>Riqueza</td><td>Pavão (19)</td><td>1073, 4476</td></tr>
-                    <tr><td>Fezes</td><td>Burro (03)</td><td>1009, 4412</td></tr>
-                    <tr><td>Sol forte</td><td>Camelo (08)</td><td>1029, 4432</td></tr>
-                    <tr><td>Luta</td><td>Tigre (22)</td><td>1085, 4488</td></tr>
-                    <tr><td>Carga pesada</td><td>Cavalo (11)</td><td>1041, 4444</td></tr>
-                    <tr><td>Rio</td><td>Jacaré (15)</td><td>1057, 4460</td></tr>
+                    <tr><th>Sonho</th><th>Animal (Grupo)</th><th>Milhar</th></tr>
+                    <tr><td>Banana</td><td>Macaco (17)</td><td>1065</td></tr>
+                    <tr><td>Cavalo correndo</td><td>Cavalo (11)</td><td>1041</td></tr>
+                    <tr><td>Água suja</td><td>Jacaré (15)</td><td>1057</td></tr>
+                    <tr><td>Leite</td><td>Vaca (25)</td><td>1097</td></tr>
+                    <tr><td>Serpente</td><td>Cobra (09)</td><td>1033</td></tr>
+                    <tr><td>Carne crua</td><td>Tigre (22)</td><td>1085</td></tr>
+                    <tr><td>Voo alto</td><td>Águia (02)</td><td>1005</td></tr>
+                    <tr><td>Dinheiro</td><td>Porco (18)</td><td>1069</td></tr>
+                    <tr><td>Fogo</td><td>Leão (16)</td><td>1061</td></tr>
+                    <tr><td>Chuva</td><td>Camelo (08)</td><td>1029</td></tr>
+                    <tr><td>Pássaro cantando</td><td>Pavão (19)</td><td>1073</td></tr>
+                    <tr><td>Carro</td><td>Touro (21)</td><td>1081</td></tr>
+                    <tr><td>Floresta</td><td>Urso (23)</td><td>1089</td></tr>
+                    <tr><td>Praia</td><td>Peru (20)</td><td>1077</td></tr>
+                    <tr><td>Buraco</td><td>Coelho (10)</td><td>1037</td></tr>
+                    <tr><td>Correr rápido</td><td>Avestruz (01)</td><td>1001</td></tr>
+                    <tr><td>Mariposa</td><td>Borboleta (04)</td><td>1013</td></tr>
+                    <tr><td>Latido</td><td>Cachorro (05)</td><td>1017</td></tr>
+                    <tr><td>Montanha</td><td>Cabra (06)</td><td>1021</td></tr>
+                    <tr><td>Lã</td><td>Carneiro (07)</td><td>1025</td></tr>
+                    <tr><td>Gato miando</td><td>Gato (14)</td><td>1053</td></tr>
+                    <tr><td>Canto ao amanhecer</td><td>Galo (13)</td><td>1049</td></tr>
+                    <tr><td>Pesado</td><td>Elefante (12)</td><td>1045</td></tr>
+                    <tr><td>Velocidade</td><td>Veado (24)</td><td>1093</td></tr>
+                    <tr><td>Riqueza</td><td>Pavão (19)</td><td>1073</td></tr>
+                    <tr><td>Fezes</td><td>Burro (03)</td><td>1009</td></tr>
+                    <tr><td>Sol forte</td><td>Camelo (08)</td><td>1029</td></tr>
+                    <tr><td>Luta</td><td>Tigre (22)</td><td>1085</td></tr>
+                    <tr><td>Carga pesada</td><td>Cavalo (11)</td><td>1041</td></tr>
+                    <tr><td>Rio</td><td>Jacaré (15)</td><td>1057</td></tr>
                 </table>
             </div>
         </div>
@@ -337,10 +378,10 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Cruz do Dia ▼</div>
             <div class="card-content">
-                <p>Calcule a Cruz do Dia atual e receba uma milhar baseada no grupo do dia.</p>
+                <p>Calcule a Cruz do Dia atual e receba uma milhar.</p>
                 <button onclick="calcularCruz()">Ver Cruz do Dia</button>
                 <div id="cruz-result"></div>
-                <p><strong>Como funciona:</strong> Dia + Dia → Multiplica algarismos → Soma 3. Milhar gerada no grupo.</p>
+                <p><strong>Como funciona:</strong> Dia + Dia → Multiplica algarismos → Soma 3.</p>
             </div>
         </div>
 
@@ -348,7 +389,7 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Palpites ▼</div>
             <div class="card-content">
-                <p>Palpites automáticos para as bancas PT RIO, LOOK/GO, NACIONAL, LOTEP e MALUCA/BA. Inclui 10 milhares e 5 grupos por banca.</p>
+                <p>Palpites para PT RIO, LOOK/GO, NACIONAL, LOTEP e MALUCA/BA (10 milhares e 5 grupos).</p>
                 <button onclick="gerarPalpites()">Gerar Palpites</button>
                 <div id="palpites-result"></div>
             </div>
@@ -358,7 +399,7 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Estatísticas de Animais ▼</div>
             <div class="card-content">
-                <p>Veja os animais mais sorteados no Jogo do Bicho com base em tendências gerais.</p>
+                <p>Animais mais sorteados no Jogo do Bicho.</p>
                 <table>
                     <tr><th>Animal</th><th>Grupo</th><th>Frequência (%)</th></tr>
                     <tr><td>Macaco</td><td>17</td><td>8.5%</td></tr>
@@ -374,38 +415,26 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Estratégias ▼</div>
             <div class="card-content">
-                <h3>Acertar o Grupo na Cabeça</h3>
-                <p>Combine a Cruz do Dia com as puxadas. Exemplo: Cruz = 05 (Águia), puxada para Coelho (10).</p>
-                
-                <h3>Tirar Milhar do Resultado</h3>
-                <p>Pegue os dois últimos números do 1º prêmio anterior (ex.: 1234 → 34, Cobra). Combine com uma centena do mesmo grupo (ex.: 134).</p>
-                
+                <h3>Acertar o Grupo</h3>
+                <p>Combine a Cruz do Dia com puxadas (ex.: Cruz = 05, puxada para 10).</p>
+                <h3>Milhar do Resultado</h3>
+                <p>Use os dois últimos números do 1º prêmio (ex.: 1234 → 34).</p>
                 <h3>Somas para Milhar</h3>
                 <ul>
-                    <li><strong>Soma de Sonhos:</strong> Some as dezenas de dois animais sonhados (ex.: Macaco 65 + Vaca 97 = 162 → 62, Leão).</li>
-                    <li><strong>Soma do Dia e Mês:</strong> Dia 06 + Mês 03 = 09 (Cobra), milhar 1033.</li>
-                    <li><strong>Soma com a Idade:</strong> Insira sua idade para uma milhar única:
-                        <input type="number" id="idade" min="1" max="99" placeholder="Sua idade">
-                        <button onclick="gerarMilharIdade()">Gerar Milhar</button>
-                        <div id="milhar-idade-result"></div>
-                    </li>
-                    <li><strong>Soma Aleatória:</strong> Escolha dois números pessoais (ex.: dia de nascimento 15 + número da casa 23 = 38, Coelho).</li>
+                    <li><strong>Sonhos:</strong> Macaco 65 + Vaca 97 = 62 (Leão).</li>
+                    <li><strong>Dia e Mês:</strong> 06 + 03 = 09 (Cobra).</li>
+                    <li><strong>Idade:</strong> <input type="number" id="idade" min="1" max="99" placeholder="Sua idade">
+                        <button onclick="gerarMilharIdade()">Gerar</button>
+                        <div id="milhar-idade-result"></div></li>
                 </ul>
-                
-                <h3>Combinação de Puxadas</h3>
-                <p>Escolha um animal frequente (ex.: Macaco) e jogue suas puxadas (Avestruz, Cachorro) em grupos ou dezenas.</p>
-                
+                <h3>Puxadas</h3>
+                <p>Escolha um animal frequente e suas puxadas.</p>
                 <h3>Milhar Invertida</h3>
-                <p>Inverta os dois últimos números do resultado anterior (ex.: 5678 → 87, Tigre) e adicione uma centena do grupo (ex.: 487).</p>
-                
+                <p>Inverta os dois últimos números (ex.: 5678 → 87).</p>
                 <h3>Técnica do Relógio</h3>
-                <p>Use a hora atual (ex.: 14h = Gato, grupo 14) e combine com a dezena da Cruz do Dia para formar uma milhar (ex.: 1453).</p>
-                
-                <h3>Padrão de Repetição</h3>
-                <p>Observe resultados anteriores e repita dezenas que aparecem com frequência (ex.: 17 do Cachorro em três dias seguidos → 1717).</p>
-                
+                <p>Use a hora atual (ex.: 14h = Gato).</p>
                 <h3>Dica Geral</h3>
-                <p>Combine técnicas, anote padrões e ajuste suas jogadas. Jogue com moderação e boa sorte!</p>
+                <p>Combine técnicas e jogue com moderação.</p>
             </div>
         </div>
     </div>
@@ -419,10 +448,7 @@
     </div>
 
     <footer>
-        <p>© 2025 OJogoonline - O portal completo para os amantes do Jogo do Bicho</p>
-        <div class="banner-container">
-            <a href="banner.png" target="_blank"><img src="banner.png" alt="Banner"></a>
-        </div>
+        <p>© 2025 OJogoonline - Portal do Jogo do Bicho</p>
         <a href="https://ojogoonline.com" class="back-button">VOLTAR PÁGINA INICIAL</a>
     </footer>
 
@@ -436,21 +462,21 @@
         const puxadas = {
             avestruz: "Vaca, Águia, Galo, Pavão, Peru",
             aguia: "Coelho, Avestruz, Galo, Pavão, Peru",
-            burro: "Cavalo, Elefante, Touro, Veado, Coelho, Cobra",
-            borboleta: "Cabra, Elefante, Gato, Leão, Cachorro, Galo",
-            cachorro: "Galo, Gato, Camelo, Macaco, Porco, Pavão",
-            cabra: "Carneiro, Macaco, Elefante, Touro, Tigre, Urso",
+            burro: "Cavalo, Elefante, Touro, Veado, Coelho",
+            borboleta: "Cabra, Elefante, Gato, Leão, Cachorro",
+            cachorro: "Galo, Gato, Camelo, Macaco, Porco",
+            cabra: "Carneiro, Macaco, Elefante, Touro, Tigre",
             carneiro: "Cabra, Coelho, Vaca",
             camelo: "Cachorro, Elefante, Urso",
             cobra: "Jacaré, Porco, Burro, Gato",
             coelho: "Carneiro, Águia, Burro",
             cavalo: "Burro, Cabra, Touro",
-            elefante: "Cabra, Urso, Tigre, Leão, Burro",
-            galo: "Cachorro, Avestruz, Águia, Pavão, Peru",
+            elefante: "Cabra, Urso, Tigre, Leão",
+            galo: "Cachorro, Avestruz, Águia, Pavão",
             gato: "Cachorro, Leão, Tigre, Cobra",
             jacare: "Borboleta, Burro, Coelho, Gato",
-            leao: "Avestruz, Borboleta, Cachorro, Gato",
-            macaco: "Avestruz, Cachorro, Jacaré, Leão",
+            leao: "Avestruz, Borboleta, Cachorro",
+            macaco: "Avestruz, Cachorro, Jacaré",
             porco: "Burro, Cobra, Leão, Tigre",
             pavao: "Avestruz, Burro, Galo, Vaca",
             peru: "Avestruz, Águia, Galo, Pavão",
@@ -495,7 +521,7 @@
             const dezenaAleatoria = dezenasPorGrupo[grupo][Math.floor(Math.random() * 4)];
             const milharPrefixo = Math.floor(Math.random() * 90 + 10);
             const milhar = milharPrefixo.toString() + dezenaAleatoria;
-            document.getElementById("cruz-result").innerHTML = `Cruz do Dia ${dia.toString().padStart(2, "0")}/${mes.toString().padStart(2, "0")}/${ano}: Dezena ${dezena.toString().padStart(2, "0")} (Grupo ${grupo.toString().padStart(2, "0")} - ${animais[grupo]}). Milhar sugerida: ${milhar}`;
+            document.getElementById("cruz-result").innerHTML = `Cruz do Dia ${dia.toString().padStart(2, "0")}/${mes.toString().padStart(2, "0")}/${ano}: Dezena ${dezena.toString().padStart(2, "0")} (Grupo ${grupo.toString().padStart(2, "0")} - ${animais[grupo]}). Milhar: ${milhar}`;
         }
 
         function gerarPalpites() {
@@ -512,7 +538,6 @@
             };
             let palpitesHTML = "";
             bancas.forEach(banca => {
-                // Gerar 10 milhares
                 let milhares = [];
                 for (let i = 0; i < 10; i++) {
                     const grupo = Math.floor(Math.random() * 25) + 1;
@@ -520,19 +545,16 @@
                     const milharPrefixo = Math.floor(Math.random() * 90 + 10);
                     milhares.push(milharPrefixo.toString() + dezena);
                 }
-
-                // Gerar 5 grupos únicos
                 let grupos = new Set();
                 while (grupos.size < 5) {
                     const grupo = Math.floor(Math.random() * 25);
                     grupos.add(grupo);
                 }
                 const gruposArray = Array.from(grupos).map(g => `${(g + 1).toString().padStart(2, "0")} - ${animais[g]}`);
-
                 palpitesHTML += `
                     <p><strong>${banca}:</strong></p>
-                    <p>Milhares sugeridas: ${milhares.join(", ")}</p>
-                    <p>Grupos sugeridos: ${gruposArray.join(", ")}</p>
+                    <p>Milhares: ${milhares.join(", ")}</p>
+                    <p>Grupos: ${gruposArray.join(", ")}</p>
                     <hr>
                 `;
             });
@@ -557,9 +579,9 @@
                 const dezenaAleatoria = dezenasPorGrupo[grupo][Math.floor(Math.random() * 4)];
                 const milharPrefixo = Math.floor(Math.random() * 90 + 10);
                 const milhar = milharPrefixo.toString() + dezenaAleatoria;
-                resultDiv.innerHTML = `Milhar baseada na idade ${idade}: ${milhar} (Grupo ${grupo.toString().padStart(2, "0")} - ${animais[grupo]})`;
+                resultDiv.innerHTML = `Milhar (idade ${idade}): ${milhar} (Grupo ${grupo.toString().padStart(2, "0")} - ${animais[grupo]})`;
             } else {
-                resultDiv.innerHTML = "Digite uma idade válida (1 a 99)!";
+                resultDiv.innerHTML = "Digite uma idade válida (1-99)!";
             }
         }
     </script>
