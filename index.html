@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OJOGOONLINE - Tudo sobre Jogo do Bicho</title>
+    <title>OJogoonline - Tudo sobre Jogo do Bicho</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -21,7 +21,7 @@
             padding: 60px 20px;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
             position: relative;
-            border-bottom: 5px solid #FFD700; /* Borda dourada no cabeçalho */
+            border-bottom: 5px solid #FFD700;
         }
         header::before {
             content: '';
@@ -40,13 +40,15 @@
         }
         header h1 {
             margin: 0;
-            font-size: 4em;
-            letter-spacing: 4px;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            font-family: 'Arial', sans-serif;
             font-weight: bold;
+            text-transform: uppercase;
         }
         header p {
             font-size: 1.4em;
-            margin-top: 10px;
+            margin-top: 20px;
         }
         .container {
             max-width: 1200px;
@@ -57,7 +59,7 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         }
         .card {
-            background: #d3d3d3; /* Cinza claro */
+            background: #d3d3d3;
             border-radius: 15px;
             margin-bottom: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -70,8 +72,8 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
         .card-header {
-            background: linear-gradient(90deg, #FFD700, #DAA520); /* Gradiente dourado */
-            color: #2c3e50; /* Texto em cinza escuro para contraste */
+            background: linear-gradient(90deg, #FFD700, #DAA520);
+            color: #2c3e50;
             padding: 20px;
             cursor: pointer;
             font-size: 1.8em;
@@ -82,7 +84,7 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         .card-header:hover {
-            background: linear-gradient(90deg, #DAA520, #FFD700); /* Gradiente invertido ao hover */
+            background: linear-gradient(90deg, #DAA520, #FFD700);
         }
         .card-content {
             padding: 25px;
@@ -125,11 +127,11 @@
             transition: border-color 0.3s, box-shadow 0.3s;
         }
         select:hover, button:hover, input:hover {
-            border-color: #FFD700; /* Borda dourada ao hover */
+            border-color: #FFD700;
             box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
         }
         button {
-            background: linear-gradient(90deg, #FFD700, #DAA520); /* Botões dourados */
+            background: linear-gradient(90deg, #FFD700, #DAA520);
             color: #2c3e50;
             cursor: pointer;
             border: none;
@@ -137,10 +139,10 @@
         button:hover {
             background: linear-gradient(90deg, #DAA520, #FFD700);
         }
-        #puxada-result, #cruz-result, #milhar-idade-result {
+        #puxada-result, #cruz-result, #milhar-idade-result, #palpites-result {
             margin-top: 20px;
             font-weight: bold;
-            color: #34495e;
+            color: #2c3e50;
             background: #e8ecef;
             padding: 10px;
             border-radius: 5px;
@@ -150,8 +152,33 @@
             padding: 25px;
             background: linear-gradient(90deg, #34495e, #2c3e50);
             color: #ecf0f1;
-            border-top: 5px solid #FFD700; /* Borda dourada no rodapé */
+            border-top: 5px solid #FFD700;
             box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .banner-container {
+            background: rgba(44, 62, 80, 0.8);
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .banner-container a img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, #FFD700, #DAA520);
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .back-button:hover {
+            background: linear-gradient(90deg, #DAA520, #FFD700);
         }
         .whatsapp-float {
             position: fixed;
@@ -178,7 +205,7 @@
             color: white;
             padding: 8px 15px;
             border-radius: 8px;
-            margin-right: 15px;
+            margin-right: 5px; /* Reduzido de 15px para 5px */
             font-weight: bold;
             font-size: 1.2em;
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
@@ -187,8 +214,8 @@
 </head>
 <body>
     <header>
-        <h1>OJOGOONLINE</h1>
-        <p>Seu guia definitivo para o Jogo do Bicho - Números, Puxadas, Sonhos e Estratégias!</p>
+        <h1>OJogoonline</h1>
+        <p>Seu guia definitivo para o Jogo do Bicho<br>Números, Puxadas, Sonhos e Estratégias!</p>
     </header>
     <div class="container">
         <!-- Grupos e Números -->
@@ -310,10 +337,20 @@
         <div class="card">
             <div class="card-header" onclick="toggleCard(this)">Cruz do Dia ▼</div>
             <div class="card-content">
-                <p>Calcule a Cruz do Dia para 06/03/2025 e receba uma milhar baseada no grupo do dia.</p>
+                <p>Calcule a Cruz do Dia atual e receba uma milhar baseada no grupo do dia.</p>
                 <button onclick="calcularCruz()">Ver Cruz do Dia</button>
                 <div id="cruz-result"></div>
                 <p><strong>Como funciona:</strong> Dia + Dia → Multiplica algarismos → Soma 3. Milhar gerada no grupo.</p>
+            </div>
+        </div>
+
+        <!-- Palpites -->
+        <div class="card">
+            <div class="card-header" onclick="toggleCard(this)">Palpites ▼</div>
+            <div class="card-content">
+                <p>Palpites automáticos para as bancas PT RIO, LOOK/GO, NACIONAL, LOTEP e MALUCA/BA. Inclui 10 milhares e 5 grupos por banca.</p>
+                <button onclick="gerarPalpites()">Gerar Palpites</button>
+                <div id="palpites-result"></div>
             </div>
         </div>
 
@@ -382,7 +419,11 @@
     </div>
 
     <footer>
-        <p>© 2025 OJOGOONLINE - O portal completo para os amantes do Jogo do Bicho</p>
+        <p>© 2025 OJogoonline - O portal completo para os amantes do Jogo do Bicho</p>
+        <div class="banner-container">
+            <a href="banner.png" target="_blank"><img src="banner.png" alt="Banner"></a>
+        </div>
+        <a href="https://ojogoonline.com" class="back-button">VOLTAR PÁGINA INICIAL</a>
     </footer>
 
     <script>
@@ -431,8 +472,10 @@
         }
 
         function calcularCruz() {
-            const hoje = new Date('2025-03-06');
+            const hoje = new Date();
             const dia = hoje.getDate();
+            const mes = hoje.getMonth() + 1;
+            const ano = hoje.getFullYear();
             let soma = dia + dia;
             let strSoma = soma.toString().padStart(2, "0");
             let produto = parseInt(strSoma[0]) * parseInt(strSoma[1]);
@@ -452,7 +495,48 @@
             const dezenaAleatoria = dezenasPorGrupo[grupo][Math.floor(Math.random() * 4)];
             const milharPrefixo = Math.floor(Math.random() * 90 + 10);
             const milhar = milharPrefixo.toString() + dezenaAleatoria;
-            document.getElementById("cruz-result").innerHTML = `Cruz do Dia ${dia}/03/2025: Dezena ${dezena.toString().padStart(2, "0")} (Grupo ${grupo.toString().padStart(2, "0")} - ${animais[grupo]}). Milhar sugerida: ${milhar}`;
+            document.getElementById("cruz-result").innerHTML = `Cruz do Dia ${dia.toString().padStart(2, "0")}/${mes.toString().padStart(2, "0")}/${ano}: Dezena ${dezena.toString().padStart(2, "0")} (Grupo ${grupo.toString().padStart(2, "0")} - ${animais[grupo]}). Milhar sugerida: ${milhar}`;
+        }
+
+        function gerarPalpites() {
+            const bancas = ["PT RIO", "LOOK/GO", "NACIONAL", "LOTEP", "MALUCA/BA"];
+            const animais = ["Avestruz", "Águia", "Burro", "Borboleta", "Cachorro", "Cabra", "Carneiro", "Camelo", "Cobra", "Coelho", "Cavalo", "Elefante", "Galo", "Gato", "Jacaré", "Leão", "Macaco", "Porco", "Pavão", "Peru", "Touro", "Tigre", "Urso", "Veado", "Vaca"];
+            const dezenasPorGrupo = {
+                1: ["01", "02", "03", "04"], 2: ["05", "06", "07", "08"], 3: ["09", "10", "11", "12"], 4: ["13", "14", "15", "16"],
+                5: ["17", "18", "19", "20"], 6: ["21", "22", "23", "24"], 7: ["25", "26", "27", "28"], 8: ["29", "30", "31", "32"],
+                9: ["33", "34", "35", "36"], 10: ["37", "38", "39", "40"], 11: ["41", "42", "43", "44"], 12: ["45", "46", "47", "48"],
+                13: ["49", "50", "51", "52"], 14: ["53", "54", "55", "56"], 15: ["57", "58", "59", "60"], 16: ["61", "62", "63", "64"],
+                17: ["65", "66", "67", "68"], 18: ["69", "70", "71", "72"], 19: ["73", "74", "75", "76"], 20: ["77", "78", "79", "80"],
+                21: ["81", "82", "83", "84"], 22: ["85", "86", "87", "88"], 23: ["89", "90", "91", "92"], 24: ["93", "94", "95", "96"],
+                25: ["97", "98", "99", "00"]
+            };
+            let palpitesHTML = "";
+            bancas.forEach(banca => {
+                // Gerar 10 milhares
+                let milhares = [];
+                for (let i = 0; i < 10; i++) {
+                    const grupo = Math.floor(Math.random() * 25) + 1;
+                    const dezena = dezenasPorGrupo[grupo][Math.floor(Math.random() * 4)];
+                    const milharPrefixo = Math.floor(Math.random() * 90 + 10);
+                    milhares.push(milharPrefixo.toString() + dezena);
+                }
+
+                // Gerar 5 grupos únicos
+                let grupos = new Set();
+                while (grupos.size < 5) {
+                    const grupo = Math.floor(Math.random() * 25);
+                    grupos.add(grupo);
+                }
+                const gruposArray = Array.from(grupos).map(g => `${(g + 1).toString().padStart(2, "0")} - ${animais[g]}`);
+
+                palpitesHTML += `
+                    <p><strong>${banca}:</strong></p>
+                    <p>Milhares sugeridas: ${milhares.join(", ")}</p>
+                    <p>Grupos sugeridos: ${gruposArray.join(", ")}</p>
+                    <hr>
+                `;
+            });
+            document.getElementById("palpites-result").innerHTML = palpitesHTML;
         }
 
         function gerarMilharIdade() {
